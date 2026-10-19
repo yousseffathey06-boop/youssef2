@@ -1,0 +1,7 @@
+(() => {
+ const layer=document.getElementById("heartsLayer");
+ function createHeart(){if(!layer||window.matchMedia("(prefers-reduced-motion: reduce)").matches)return;const h=document.createElement("span");h.className="floating-heart";h.textContent=Math.random()>.35?"♥":"♡";h.style.left=`${Math.random()*100}vw`;h.style.fontSize=`${12+Math.random()*22}px`;const duration=7+Math.random()*8;h.style.animationDuration=`${duration}s`;layer.appendChild(h);window.setTimeout(()=>h.remove(),duration*1000);}
+ for(let i=0;i<9;i++)window.setTimeout(createHeart,i*450);window.setInterval(createHeart,900);
+ document.querySelectorAll(".photo-input").forEach(input=>input.addEventListener("change",event=>{const file=event.target.files&&event.target.files[0];if(!file)return;if(!file.type.startsWith("image/")){alert("Please choose an image file.");return;}const card=input.closest(".memory-card"),img=card.querySelector("img"),placeholder=card.querySelector(".memory-placeholder");if(img.dataset.objectUrl)URL.revokeObjectURL(img.dataset.objectUrl);const url=URL.createObjectURL(file);img.src=url;img.dataset.objectUrl=url;img.hidden=false;placeholder.hidden=true;}));
+ const button=document.getElementById("wishButton"),reveal=document.getElementById("wishReveal");if(button&&reveal)button.addEventListener("click",()=>{reveal.hidden=false;button.textContent="A beautiful wish for my Nono 💗";button.setAttribute("aria-expanded","true");reveal.scrollIntoView({behavior:"smooth",block:"nearest"});});
+})();

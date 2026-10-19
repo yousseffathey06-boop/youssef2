@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#fff0f5"><meta name="description" content="A birthday surprise made with love for Nour.">
+<title>Happy Birthday, Nour! ❤️</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Poppins:wght@400;500;600;700;800&family=Amiri:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+<div class="hearts-layer" aria-hidden="true" id="heartsLayer"></div>
+<header class="topbar"><a class="brand" href="#home">♡ Noor's Little World</a><nav><a href="#letter">My Letter</a><a href="#memories">Our Memories</a><a href="#wish">A Wish</a></nav></header>
+<main>
+<section class="hero section" id="home">
+<div class="hero-badge">A special day for someone truly special ✨</div><div class="heart-emblem" aria-hidden="true">♥</div>
+<p class="eyebrow">To my favorite person and sweetest story</p><h1>Happy Birthday, <span>Nour</span>!</h1>
+<p class="hero-subtitle">My Nonty, my Nono… today isn't just an ordinary day. It's the day the world became a little brighter. ❤️</p>
+<a class="primary-button" href="#letter">Open my letter, sweetheart <span>↓</span></a><div class="scroll-note">A few little surprises are waiting below</div>
+</section>
+<section class="section letter-section" id="letter">
+<div class="section-heading"><span class="mini-heart">♡</span><p class="eyebrow">A message from my heart</p><h2>Just for you, my Nonty</h2></div>
+<article class="letter-card" lang="ar" dir="rtl">
+<div class="letter-stamp">إلى نور<br>بكل الحب ♡</div>
+<p>حبيبتي نور، نونتي ونونو الجميلة…</p>
+<p>كل سنة وإنتِ طيبة يا روح قلبي، ويا أجمل حاجة حصلتلي. النهارده يوم مميز عشان هو اليوم اللي اتولدت فيه أجمل وأحنّ بنت في الدنيا، البنت اللي وجودها بيخلّي أيامي أحلى، وضحكتها قادرة تغيّر مزاجي وتخلّي الدنيا كلها تهون.</p>
+<p>يمكن الكلام مهما كان كتير مش هيقدر يوصف إنتِ غالية عندي قد إيه، بس نفسي دايمًا تحسي بحبي ليكي في كل تفصيلة، وتعرفي إنك مش مجرد حد في حياتي، إنتِ حتة من قلبي، وفرحتي، وأجمل حكاية نفسي تكمّل معايا.</p>
+<p>يا نونتي، بتمنالك سنة جديدة مليانة فرحة ونجاح وراحة بال، وكل حاجة نفسك فيها تتحقق. يا رب أشوف ضحكتك دايمًا، وأكون سبب في فرحتك، وأفضل جنبك في الأيام الحلوة والصعبة، وأقدر أديكي من الحب والحنية قد اللي إنتِ تستاهليه وأكتر.</p>
+<p>يا نونو، مهما عدى وقت ومهما اتغيرت الأيام، أتمنى تفضلي عارفة إن ليكي مكانة خاصة محدش يقدر ياخدها، وإن وجودك في حياتي نعمة بحمد ربنا عليها. نفسي كل عيد ميلاد ليكي يكون أحلى من اللي قبله، ونفضل نخلق ذكريات حلوة نفتكرها ونضحك عليها سوا.</p>
+<p>كل سنة وإنتِ حبيبتي وصاحبتي وأماني الحلو. كل سنة وإنتِ نور قلبي قبل ما تكوني نور الدنيا. عيد ميلاد سعيد يا أجمل نور في حياتي… بحبك يا نونتي ويا نونو أكتر من أي كلام ممكن يوصف. ❤️</p>
+<p class="letter-signature">من قلبي ليكي، بكل الحب اللي جوايا ♥</p>
+</article>
+</section>
+<section class="section memories-section" id="memories">
+<div class="section-heading"><span class="mini-heart">♡</span><p class="eyebrow">Little moments, forever in our hearts</p><h2>Our Story in Pictures 📸</h2><p class="section-intro">This is where our favorite memories belong. Tap any frame to choose a photo from your device.</p></div>
+<div class="memory-grid">
+<label class="memory-card" for="photo1"><input class="photo-input" type="file" id="photo1" accept="image/*"><img id="preview1" alt="Our first memory" hidden><span class="memory-placeholder"><span class="memory-icon">♡</span><strong>Our First Memory</strong><small>Tap to add a photo</small></span><span class="memory-caption" contenteditable="true" spellcheck="false">The beginning of something beautiful ✨</span></label>
+<label class="memory-card" for="photo2"><input class="photo-input" type="file" id="photo2" accept="image/*"><img id="preview2" alt="A happy memory together" hidden><span class="memory-placeholder"><span class="memory-icon">🌷</span><strong>Your Beautiful Smile</strong><small>Tap to add a photo</small></span><span class="memory-caption" contenteditable="true" spellcheck="false">Your smile is my favorite view</span></label>
+<label class="memory-card" for="photo3"><input class="photo-input" type="file" id="photo3" accept="image/*"><img id="preview3" alt="A favorite day together" hidden><span class="memory-placeholder"><span class="memory-icon">💗</span><strong>A Day to Remember</strong><small>Tap to add a photo</small></span><span class="memory-caption" contenteditable="true" spellcheck="false">A memory I'll always keep close</span></label>
+</div>
+<p class="privacy-note">Note: Photos selected here are previewed only in your current browser; they are not uploaded to the website. To make them visible to everyone with the link, add your pictures to <code>static/images</code> and reference them in the HTML. Please only publish personal photos with the other person's consent.</p>
+</section>
+<section class="section wish-section" id="wish"><div class="wish-card"><div class="wish-stars" aria-hidden="true">✦ ✧ ✦</div><p class="eyebrow">Before your special day ends</p><h2>Close your eyes and make a wish, Nono 🎂</h2><p>I hope every wish finds its way to you, and that this new year brings you gentler days and more beautiful moments than you can imagine.</p><button class="primary-button" id="wishButton" type="button">Tap for your surprise 💝</button><p class="wish-reveal" id="wishReveal" hidden>My biggest wish is to keep seeing you happy and your smile lighting up the world. Happy birthday, my Noor. You are loved more than words can say. ❤️</p></div></section>
+</main>
+<footer><p>Made with love, just for <strong>Nour · Nonty · Nono</strong> ♥</p><p class="footer-small">Our sweetest story is still being written…</p></footer>
+<script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body></html>
